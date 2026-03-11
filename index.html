@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DorkLS | Cyber Reconnaissance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="DorkLS.ico" alt="DorkLS Logo" class="nav-logo">
+            <div class="brand">
+                <h1>DorkLS</h1>
+                <span>Cyber Reconnaissance</span>
+            </div>
+        </div>
+        <nav>
+            <a href="DorkLS.exe" class="btn-download" download>
+                <span class="icon">📥</span> Download 
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">DorkLS Searcher</h1>
+                <p>Analyse avancée de vulnérabilités. Identifiez les paramètres URL exposés instantanément.</p>
+                
+                <div class="app-window animate-float">
+                    <div class="window-header">
+                        <div class="controls">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">DorkLS Terminal v1.1</div>
+                    </div>
+                    <div class="window-body">
+                        <div class="terminal-line">
+                            <span class="prompt">root@DorkLS:~#</span> <span class="typing">scanning --dork="inurl:index.php?id="</span>
+                        </div>
+                        <div id="scan-results">
+                            </div>
+                        <div class="status-bar">
+                            Status: <span class="scanning-text">Searching Global Web...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
